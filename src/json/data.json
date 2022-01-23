@@ -1,0 +1,94 @@
+{
+    "name": "Luis Enrique Romero Martínez",
+    "work": "Front end Developer",
+    "links": [
+        {
+            "id": "about",
+            "text": "About Me",
+            "icon": "InfoTwoToneIcon"
+        },
+        {
+            "id": "skills",
+            "text": "Skills",
+            "icon": "EmojiObjectsTwoToneIcon"
+        },
+        {
+            "id": "work",
+            "text": "My Work",
+            "icon": "BuildTwoToneIcon"
+        },
+        {
+            "id": "contact",
+            "text": "Contacto",
+            "icon": "ContactMailTwoTone"
+        }
+    ],
+    "skills": [
+        {
+            "id": 1,
+            "skill": "HTML 5",
+            "key": "html",
+            "icon": "faHtml5"
+        },
+        {
+            "id": 2,
+            "skill": "CSS",
+            "key": "css",
+            "icon": "faCss3Alt"
+        },
+        {
+            "id": 3,
+            "skill": "JavaScript",
+            "key": "javascript",
+            "icon": "faJs"
+        },
+        {
+            "id": 4,
+            "skill": "SASS",
+            "key": "sass",
+            "icon": "faSass"
+        },
+        {
+            "id": 5,
+            "skill": "NodeJS",
+            "key": "nodejs",
+            "icon": "faNodeJs"
+        },
+        {
+            "id": 6,
+            "skill": "Bootstrap",
+            "key": "Bootstrap",
+            "icon": "faBootstrap"
+        },
+        {
+            "id": 7,
+            "skill": "Wordpress",
+            "key": "wordpress",
+            "icon": "faWordpress"
+        },
+        {
+            "id": 8,
+            "skill": "Git",
+            "key": "git",
+            "icon": "faGit"
+        },
+        {
+            "id": 9,
+            "skill": "GitHub",
+            "key": "github",
+            "icon": "faGithub"
+        },
+        {
+            "id": 10,
+            "skill": "ReactJs",
+            "key": "react",
+            "icon": "faReact"
+        },
+        {
+            "id": 11,
+            "skill": "Photoshop",
+            "key": "photoshop",
+            "icon": "base"
+        }
+    ]
+}
