@@ -1,10 +1,7 @@
-import { Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-
 import Thypography from "@material-ui/core/Typography";
 import React from "react";
 import Chip from "@material-ui/core/Chip";
-
 import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
 import EmailIcon from "@material-ui/icons/Email";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
