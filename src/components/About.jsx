@@ -11,7 +11,7 @@ import {
 } from "@material-ui/core";
 import TypeWriterEffect from "react-typewriter-effect";
 import info from "../json/data.json";
-import cv from "../img/CvLuis.pdf";
+import cv from "../img/CvLuis22.pdf";
 
 const About = ({ title, dark, id }) => {
   const classes = useStyles();
