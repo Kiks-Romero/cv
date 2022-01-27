@@ -1,6 +1,4 @@
 import React from "react";
-
-import Footer from "./Footer";
 import About from "./About";
 import Navbar from "./Navbar";
 import SkillList from "./SkillList";
@@ -18,7 +16,6 @@ const Contenedor = () => {
       <SkillList title="My Coding Journey" id="skills" dark={false} />
       <MyWork title="My Work" id="work" dark={true} />
       <Contact title="Contacto" id="contact" dark={false} />
-      <Footer title="Footer" id="footer" dark={true} />
     </div>
   );
 };

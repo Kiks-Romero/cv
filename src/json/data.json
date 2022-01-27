@@ -28,67 +28,101 @@
             "id": 1,
             "skill": "HTML 5",
             "key": "html",
-            "icon": "faHtml5"
+            "stars": 5
         },
         {
             "id": 2,
             "skill": "CSS",
             "key": "css",
-            "icon": "faCss3Alt"
+            "stars": 5
         },
         {
             "id": 3,
             "skill": "JavaScript",
             "key": "javascript",
-            "icon": "faJs"
+            "stars": 5
         },
         {
             "id": 4,
             "skill": "SASS",
             "key": "sass",
-            "icon": "faSass"
+            "stars": 4
         },
         {
             "id": 5,
             "skill": "NodeJS",
             "key": "nodejs",
-            "icon": "faNodeJs"
+            "stars": 4
         },
         {
             "id": 6,
             "skill": "Bootstrap",
-            "key": "Bootstrap",
-            "icon": "faBootstrap"
+            "key": "bootstrap",
+            "stars": 4
         },
         {
             "id": 7,
             "skill": "Wordpress",
             "key": "wordpress",
-            "icon": "faWordpress"
+            "stars": 4
         },
         {
             "id": 8,
             "skill": "Git",
             "key": "git",
-            "icon": "faGit"
+            "stars": 5
         },
         {
             "id": 9,
             "skill": "GitHub",
             "key": "github",
-            "icon": "faGithub"
+            "stars": 5
         },
         {
             "id": 10,
             "skill": "ReactJs",
             "key": "react",
-            "icon": "faReact"
+            "stars": 5
         },
         {
             "id": 11,
+            "skill": "Redux",
+            "key": "redux",
+            "stars": 3
+        },
+        {
+            "id": 12,
+            "skill": "Material Design",
+            "key": "mui",
+            "stars": 4
+        },
+        {
+            "id": 13,
             "skill": "Photoshop",
             "key": "photoshop",
-            "icon": "base"
+            "stars": 3
+        }
+    ],
+    "examples": [
+        {
+            "title": "cv 2020",
+            "link": "https://kiks-romero.github.io/",
+            "image": "blablabla"
+        },
+        {
+            "title": "Anime Search",
+            "link": "lllllll",
+            "image": "blablabla"
+        },
+        {
+            "title": "Calculator",
+            "link": "klskldkslkdls",
+            "image": "blablabla"
+        },
+        {
+            "title": "cv 2021",
+            "link": "https://kiks-romero.github.io/CV2021/",
+            "image": "blablabla"
         }
     ]
 }

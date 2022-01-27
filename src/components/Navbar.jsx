@@ -9,7 +9,7 @@ import {
 import { makeStyles } from "@material-ui/styles";
 import React, { useState } from "react";
 import logo from "../img/icon-cat.png";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import MenuIcon from "@material-ui/icons/Menu";
 import CancelIcon from "@material-ui/icons/Cancel";
 
@@ -109,15 +109,15 @@ const useStyles = makeStyles((theme) => ({
     },
     "& a:hover": {
       cursor: "pointer",
-      color: "tomato",
-      borderBottom: "3px solid tomato",
+      color: "#5c6bc0",
+      borderBottom: "3px solid #5c6bc0",
     },
   },
   menuButton: {
     display: "none",
     [theme.breakpoints.down("sm")]: {
       display: "block",
-      color: "tomato",
+      color: "#1a237e",
       position: "absolute",
       top: 0,
       right: 10,
@@ -127,7 +127,7 @@ const useStyles = makeStyles((theme) => ({
     color: "tomato",
     position: "absolute",
     top: 0,
-    left: 10,
+    right: 10,
   },
   sidebar: {
     width: "40vw",
@@ -141,7 +141,7 @@ const useStyles = makeStyles((theme) => ({
       fontWeight: "bold",
     },
     "& h5:hover": {
-      color: "tomato",
+      color: "indigo",
       cursor: "pointer",
     },
   },

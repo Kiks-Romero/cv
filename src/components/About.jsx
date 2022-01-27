@@ -11,11 +11,10 @@ import {
 } from "@material-ui/core";
 import TypeWriterEffect from "react-typewriter-effect";
 import info from "../json/data.json";
-import cv from "../img/profile.jpg";
+import cv from "../img/CvLuis.pdf";
 
 const About = ({ title, dark, id }) => {
   const classes = useStyles();
-  console.log(info.name);
   return (
     <div className={`${classes.section} ${dark && classes.sectiondark}`}>
       <div className={classes.sectionContent} id={id}>
@@ -26,13 +25,13 @@ const About = ({ title, dark, id }) => {
             className={classes.media}
             title="picture"
           />
-          <CardContent className={classes.content}>
+          <CardContent className={classes.cardcontent}>
             <TypeWriterEffect
               text={info.name}
               textStyle={{
                 fontSize: "2rem",
                 fontWeight: "700px",
-                color: "tomato",
+                color: "#1a237e",
               }}
               startDelay={100}
               cursorColor="black"
@@ -46,12 +45,20 @@ const About = ({ title, dark, id }) => {
                 color: "black",
               }}
               startDelay={2500}
-              cursorColor="tomato"
+              cursorColor="#1a237e"
               typeSpeed={100}
             />
+            <Thypography
+              variant="h6"
+              color="secondary"
+              className={classes.sectionText}
+            >
+              I am a person who likes to learn new topics by my own and I am
+              looking for ways to improve my strengths and tackle my weaknesses.
+            </Thypography>
           </CardContent>
           <CardActions>
-            <Button variant="contained" className={classes.pdfbuttom}>
+            <Button variant="contained" className={classes.pdfbutton}>
               <a href={cv} download>
                 Download CV
               </a>
@@ -69,7 +76,7 @@ const useStyles = makeStyles((theme) => ({
   },
   sectiondark: {
     background: "#333",
-    color: "#fff",
+    color: "#eeeeee",
   },
   sectionContent: {
     maxWidth: "80vw",
@@ -85,8 +92,42 @@ const useStyles = makeStyles((theme) => ({
     width: "250px",
     height: "auto",
     objectFit: "cover",
-    borderRadius: "50%",
+    borderRadius: "25%",
     margin: theme.spacing(5),
+  },
+  cardcontent: {
+    marginTop: theme.spacing(2),
+    "& h6": {
+      marginTop: theme.spacing(6),
+      [theme.breakpoints.down("sm")]: {
+        display: "none",
+      },
+    },
+  },
+  sectionText: {
+    maxWidth: "60vw",
+  },
+  pdfbutton: {
+    position: "absolute",
+    bottom: "3rem",
+    right: "3rem",
+    [theme.breakpoints.down("sm")]: {
+      bottom: 10,
+      right: "1rem",
+    },
+    backgroundColor: "#3f51b5",
+    padding: theme.spacing(3),
+    "&:hover": {
+      backgroundColor: "#eeeeee",
+    },
+    "& a": {
+      color: "#eeeeee",
+      textDecoration: "none",
+      fontWeight: 900,
+    },
+    "& a:hover": {
+      color: "#3f51b5",
+    },
   },
 }));
 
