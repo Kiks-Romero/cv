@@ -6,6 +6,7 @@ import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
 import EmailIcon from "@material-ui/icons/Email";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
+import GitHubIcon from "@material-ui/icons/GitHub";
 
 const Contact = ({ title, dark, id }) => {
   const classes = useStyles();
@@ -31,6 +32,12 @@ const Contact = ({ title, dark, id }) => {
           color="secondary"
           icon={<PhoneAndroidIcon />}
           label="5531331678"
+        />
+        <Chip
+          variant="outlined"
+          color="secondary"
+          icon={<GitHubIcon />}
+          label="Kiks-Romero"
         />
         <Chip
           variant="outlined"

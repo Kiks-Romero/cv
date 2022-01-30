@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   Card,
@@ -7,32 +7,43 @@ import {
   Link,
   Typography,
 } from "@material-ui/core";
+import ReactCardFlip from "react-card-flip";
+import TouchAppIcon from "@material-ui/icons/TouchApp";
 
-const CardPrint = ({ title, link, image }) => {
+const CardPrint = ({ title, link, image, info }) => {
   const classes = useStyles();
-  console.log(title, link, image);
+  const [isFliped, setIsFipled] = useState(false);
   return (
-    <div>
-      <Card className={classes.card}>
-        <CardMedia
-          image={image}
-          className={classes.caratula}
-          title="thumbnail"
-        />
-        <CardContent>
-          <Link
-            href={link}
-            color="primary"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Typography variant="h6" className={classes.cardtitle}>
-              {title}
-            </Typography>
-          </Link>
-        </CardContent>
-      </Card>
-    </div>
+    <ReactCardFlip isFlipped={isFliped} flipDirection="horizontal">
+      <div>
+        <Card className={classes.card}>
+          <CardMedia
+            image={image}
+            className={classes.caratula}
+            title="thumbnail"
+            onClick={() => setIsFipled(true)}
+          />
+
+          <CardContent>
+            <Link
+              href={link}
+              color="primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Typography variant="h6" className={classes.cardtitle}>
+                {title}
+              </Typography>
+              {/* <TouchAppIcon onClick={setIsFipled(true)} /> */}
+            </Link>
+          </CardContent>
+        </Card>
+      </div>
+      <div onClick={() => setIsFipled(false)} className={classes.card}>
+        <Typography variant="h6">{info}</Typography>
+        {<TouchAppIcon />}
+      </div>
+    </ReactCardFlip>
   );
 };
 

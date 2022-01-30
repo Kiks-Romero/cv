@@ -19,7 +19,7 @@
         },
         {
             "id": "contact",
-            "text": "Contacto",
+            "text": "Contact",
             "icon": "ContactMailTwoTone"
         }
     ],
@@ -107,22 +107,26 @@
         {
             "title": "cv 2020",
             "link": "https://kiks-romero.github.io/",
-            "image": "blablabla"
+            "image": "blablabla",
+            "info": "This is my site example using html, css and js"
         },
         {
             "title": "Anime Search",
             "link": "https://kiks-romero.github.io/animeSearch/",
-            "image": "blablabla"
+            "image": "blablabla",
+            "info": "An app for search any anime you like, dev with react and material desing"
         },
         {
             "title": "Calculator",
             "link": "https://kiks-romero.github.io/calculadora/",
-            "image": "blablabla"
+            "image": "blablabla",
+            "info": "A simple calculator dev with react, styled components and more XD"
         },
         {
             "title": "cv 2021",
             "link": "https://kiks-romero.github.io/CV2021/",
-            "image": "blablabla"
+            "image": "blablabla",
+            "info": "My site dev with react and bootstrap"
         }
     ]
 }

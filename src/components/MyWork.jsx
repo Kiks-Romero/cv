@@ -8,15 +8,23 @@ import imagenExample from "../img/icon-cat.png";
 
 const MyWork = ({ title, dark, id }) => {
   const classes = useStyles();
+
   return (
     <div className={`${classes.section} ${dark && classes.sectiondark}`}>
       <div className={classes.sectionContent} id={id}>
         <Thypography variant="h3">{title}</Thypography>
         <Grid container className={classes.grid}>
-          {work.examples.map(({ title, link, image }) => {
+          {work.examples.map(({ title, link, image, info }) => {
             return (
               <Grid item key={title} xs={12} sm={6} md={4}>
-                <CardPrint title={title} link={link} image={imagenExample} />
+                <div>
+                  <CardPrint
+                    title={title}
+                    link={link}
+                    image={imagenExample}
+                    info={info}
+                  />
+                </div>
               </Grid>
             );
           })}
