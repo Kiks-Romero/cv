@@ -34,14 +34,27 @@ const CardPrint = ({ title, link, image, info }) => {
               <Typography variant="h6" className={classes.cardtitle}>
                 {title}
               </Typography>
-              {/* <TouchAppIcon onClick={setIsFipled(true)} /> */}
             </Link>
           </CardContent>
         </Card>
       </div>
       <div onClick={() => setIsFipled(false)} className={classes.card}>
-        <Typography variant="h6">{info}</Typography>
-        {<TouchAppIcon />}
+        <Card className={classes.card}>
+          <CardContent>
+            <Link
+              href={link}
+              color="primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Typography variant="h6" className={classes.cardtitle}>
+                {title}
+              </Typography>
+            </Link>
+            <Typography variant="h6">{info}</Typography>
+            <TouchAppIcon />
+          </CardContent>
+        </Card>
       </div>
     </ReactCardFlip>
   );

@@ -120,13 +120,25 @@
             "title": "Calculator",
             "link": "https://kiks-romero.github.io/calculadora/",
             "image": "blablabla",
-            "info": "A simple calculator dev with react, styled components and more XD"
+            "info": "A simple calculator dev with react and styled components"
         },
         {
             "title": "cv 2021",
             "link": "https://kiks-romero.github.io/CV2021/",
             "image": "blablabla",
             "info": "My site dev with react and bootstrap"
+        },
+        {
+            "title": "Memory app",
+            "link": "https://kiks-romero.github.io/memoryapp",
+            "image": "blablabla",
+            "info": "Memory game developed with react"
+        },
+        {
+            "title": "RockScissorsPaper",
+            "link": "https://kiks-romero.github.io/paperrockscissors/",
+            "image": "blablabla",
+            "info": "The classic rock, scissors and paper but you also play a extended version, this game was developed with react and material design "
         }
     ]
 }
